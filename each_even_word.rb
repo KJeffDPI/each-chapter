@@ -4,3 +4,13 @@
 # Look in the github README file for example output
 
 p "Enter a list of words separated by spaces:"
+input = gets.chomp
+
+words = input.split(" ")
+
+#puts "Words with even number of characters:"
+words.each do |word|
+  if word.length % 2 == 0
+    puts word
+  end
+end

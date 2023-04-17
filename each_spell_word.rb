@@ -4,4 +4,9 @@
 # Look in the github README file for example output
 
 p "Enter a word for me to spell:"
+word = gets.chomp
 
+puts "Spelling #{word}:"
+word.each_char do |char|
+  puts char.upcase
+end

@@ -5,3 +5,9 @@
 # Look in the github README file for example output
 
 p "Enter a word:"
+word = gets.chomp
+
+word.each_char do |char|
+  count = word.count(char)
+  puts "#{char} appears #{count} times"
+end
